@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".PaymentMethodActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorWhite"
+        android:gravity="center_vertical"
+        android:elevation="2dp"
+        android:id="@+id/rl_toolbar">
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/backarrow_icon"
+            android:backgroundTint="@color/colorFour"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorFour"
+            android:textStyle="bold"
+            android:text="Payment Method"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:text="Choose your preferred Payment Method:"/>
+
+
+                <ListView
+                    android:layout_width="fill_parent"
+                    android:id="@+id/lvCheckBox"
+                    android:fadingEdge="none"
+                    android:cacheColorHint="@null"
+                    android:divider="@android:color/transparent"
+                    android:scrollbars="none"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+                </ListView>
+
+    <LinearLayout
+        android:id="@+id/ln_save"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:text="Save"/>
+
+    </LinearLayout>
+
+</LinearLayout>

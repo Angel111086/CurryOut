@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".AddressActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorFour"
+                android:textSize="16sp"
+                android:text="Add Address"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:text="House/Plot No."/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="12dp"
+                android:inputType="textPersonName"
+                android:textSize="16sp"
+                android:textColorHint="@color/colorTwo"
+                android:id="@+id/edplotNumber"
+                android:hint="Enter your house/plot number "/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorThree"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:text="Street"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="12dp"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:textColorHint="@color/colorTwo"
+                android:hint="Street name"
+                android:id="@+id/edStreet"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorThree"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:text="Landmark"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="12dp"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:textColorHint="@color/colorTwo"
+                android:hint="Nearest Landmark"
+                android:id="@+id/edLandmark"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorThree"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:text="City"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="12dp"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:textColorHint="@color/colorTwo"
+                android:hint="Enter your city name"
+                android:id="@+id/edCity"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorThree"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:text="State"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="12dp"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:textColorHint="@color/colorTwo"
+                android:hint="Enter your state name"
+                android:id="@+id/edState"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorThree"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:text="Postal Code"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="12dp"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:textColorHint="@color/colorTwo"
+                android:id="@+id/edPostal"
+                android:hint="Ex: 452009"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorThree"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:text="Country"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="12dp"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:textColorHint="@color/colorTwo"
+                android:hint="Enter your country name"
+                android:id="@+id/edCountry"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/colorThree"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ln_updateAddress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:text="Update Address"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

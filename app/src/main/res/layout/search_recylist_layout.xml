@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/colorPrimary"
+    android:paddingBottom="10dp">
+
+    <com.yayandroid.parallaxrecyclerview.ParallaxImageView
+        android:id="@+id/imgTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fastfood_img"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/trans_bg">
+        <TextView
+            android:id="@+id/txt_FoodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="35dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Fast Food"/>
+
+        <TextView
+            android:id="@+id/txt_restaurants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txt_FoodName"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="156 Restaurants"
+            android:textColor="@color/colorPrimary"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@drawable/trans_bg"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:gravity="bottom"-->
+        <!--android:padding="15dp"-->
+        <!--android:orientation="vertical">-->
+
+
+
+    <!--</LinearLayout>-->
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:gravity="center_horizontal"
+    android:padding="50dp"
+    tools:context=".VerificationActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorFour"
+        android:text="Verification Code"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorTwo"
+        android:text="SMS verification code has been"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="2dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorTwo"
+        android:text="sent to:"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:text="+91 98 5234 812"
+        android:id="@+id/mobLabel"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimary"
+        android:text="Did you enter the correct mobile number?"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimary"
+        android:textAllCaps="true"
+        android:text="Pin code"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <EditText android:id="@+id/pin_first_edittext"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            style="@style/pin_edittext_style" />
+
+        <EditText android:id="@+id/pin_second_edittext"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            style="@style/pin_edittext_style" />
+
+        <EditText android:id="@+id/pin_third_edittext"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            style="@style/pin_edittext_style" />
+
+        <EditText android:id="@+id/pin_forth_edittext"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            style="@style/pin_edittext_style" />
+
+    </LinearLayout>
+    <EditText android:id="@+id/pin_hidden_edittext"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:background="@null"
+        android:cursorVisible="false"
+        android:password="true"
+        android:maxLength="4"
+        android:textColor="@color/colorFour"/>
+
+    <LinearLayout
+        android:id="@+id/ln_next"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="2dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:background="@drawable/btn_first_rounded_corner">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Next"/>
+    </LinearLayout>
+
+
+</LinearLayout>

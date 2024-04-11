@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:elevation="2dp"
+        android:id="@+id/rl_toolbar">
+        <ImageView
+            android:id="@+id/cancel_icon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/icons8deletefilled100"
+            android:backgroundTint="@color/colorWhite"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="-50dp"
+        android:overScrollMode="never">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="50dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/burger_img"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:background="@drawable/rest_bg"
+                    android:gravity="bottom"
+                    android:padding="12dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="-190dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="22sp"
+                            android:id="@+id/txtSingleName"
+                            android:text="@string/bandf_combos"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="2dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="15sp"
+                            android:id="@+id/txtSIcuisine"
+                            android:text="Fast Food | Pure Veg"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:gravity="center_vertical"
+                    android:background="@color/colorPrimary"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="true"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorWhite"
+                        android:id="@+id/txtdisprice"
+                        android:text="$3.55"/>
+
+                    <ImageView
+                        android:id="@+id/img_min"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/icons8minus100"/>
+
+                    <TextView
+                        android:id="@+id/txt_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="true"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorWhite"
+                        android:text="0"/>
+
+
+                    <ImageView
+                        android:id="@+id/img_plus"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/icons8plus100"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:textColor="@color/colorFour"
+                        android:text="Description:"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/colorTwo"
+                        android:id="@+id/txtProductDesc"
+                        android:text="The Combo offers you Burgers lorem ipusm color sit you Burgers lorem ipusm color sit. Combo Burgers"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/colorFour"
+                        android:text="Ingredients used:"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/colorTwo"
+                        android:id="@+id/txtProductIngre"
+                        android:text="The Combo offers you Burgers lorem ipusm color sit you Burgers lorem ipusm color sit. Combo Burgers"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:text="Addons:"/>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </android.support.v7.widget.RecyclerView>
+
+
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="12dp"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="25dp"-->
+                            <!--android:layout_height="25dp"-->
+                            <!--android:background="@drawable/check_icon"/>-->
+
+                        <!--<ImageView-->
+                            <!--android:visibility="gone"-->
+                            <!--android:layout_width="25dp"-->
+                            <!--android:layout_height="25dp"-->
+                            <!--android:background="@drawable/uncheck_icon"/>-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textSize="15sp"-->
+                            <!--android:textColor="@color/colorFour"-->
+                            <!--android:layout_marginStart="11dp"-->
+                            <!--android:text="Extra Cheese"/>-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textSize="15sp"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:textColor="@color/colorPrimary"-->
+                            <!--android:layout_marginStart="13dp"-->
+                            <!--android:text="$3"/>-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:background="@color/colorThree"/>-->
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginTop="12dp"-->
+                        <!--android:gravity="center_vertical"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<ImageView-->
+                            <!--android:visibility="gone"-->
+                            <!--android:layout_width="25dp"-->
+                            <!--android:layout_height="25dp"-->
+                            <!--android:background="@drawable/check_icon"/>-->
+
+                        <!--<ImageView-->
+                            <!--android:visibility="visible"-->
+                            <!--android:layout_width="25dp"-->
+                            <!--android:layout_height="25dp"-->
+                            <!--android:background="@drawable/uncheck_icon"/>-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="0dp"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textSize="15sp"-->
+                            <!--android:textColor="@color/colorFour"-->
+                            <!--android:layout_marginStart="11dp"-->
+                            <!--android:text="Schezwan Sauce"/>-->
+
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:textSize="15sp"-->
+                            <!--android:textStyle="bold"-->
+                            <!--android:textColor="@color/colorPrimary"-->
+                            <!--android:layout_marginStart="13dp"-->
+                            <!--android:text="$3"/>-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--<View-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="1dp"-->
+                        <!--android:layout_marginTop="10dp"-->
+                        <!--android:background="@color/colorThree"/>-->
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:text="Special Instructions:"/>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="@color/colorTwo"
+                        android:textColor="@color/colorFour"
+                        android:background="@android:color/transparent"
+                        android:hint="Ex: what not to add etc"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorThree"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_marginTop="15dp"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:id="@+id/txtRemove"
+                        android:gravity="center"
+                        android:text="Remove Item:"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/ln_addTocart"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/txtadd_tocart"
+            android:text="Add To Cart"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

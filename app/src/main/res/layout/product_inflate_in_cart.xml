@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="15dp"
+    android:orientation="horizontal"
+    android:id="@+id/linearListener1"
+    android:padding="10dp"
+    >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/colorFour"
+        android:id="@+id/txtListProduct"
+        android:text="Crispy Seawedd"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/colorFour"
+        android:id="@+id/txtListQty"
+        android:text="1"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textAlignment="textEnd"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/txtListPrice"
+        android:text="$22"/>
+
+
+</LinearLayout>
